@@ -29,16 +29,6 @@ const WeatherSearch = ({ setWeatherData, setError }) => {
       setError('Error fetching weather data. Please try again.');
     }
   };
-    // const styles={
-    //     box:{
-            
-    //     },
-    //     search:{
-    //         padding:"50px",
-    //         color:"red",
-    //     }
-    // style={styles.search}
-    // }
   return (
     <div className="weather-search" >
       <input id="search"type="text" placeholder="Enter Location" value={location} onChange={(e) => setLocation(e.target.value)}/>
