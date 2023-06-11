@@ -9,16 +9,13 @@ const App = () => {
   
   return (
     <>
-     {/* <div style={{backgroundImage:"url(https://www.vmcdn.ca/f/files/via/images/weather/rain-umbrella-vancouver-weather.jpg;w=960)"}}> */}
     <h1>WEATHER APP</h1>
     <div className="app"> 
       <WeatherSearch setWeatherData={setWeatherData} setError={setError} />
       {weatherData && <WeatherCard weatherData={weatherData} />}
       {error && <p className="error" style={{fontSize:'30px',fontFamily:'Arial, Helvetica, sans-serif'}}>{error}</p>}
     </div>
-   {/* </div>  */}
-   </>
-    
+   </> 
   );
 
 };
